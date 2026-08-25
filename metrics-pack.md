@@ -28,10 +28,6 @@
 4. **Có ý nghĩa** — Đạt. Tỷ lệ trưởng nhóm xem hết báo cáo tăng thật sự nghĩa là sản phẩm đang thay được việc đọc tay 400 hội thoại.
 5. **Có thể tác động** — Đạt. Team có thể cải thiện độ chính xác tóm tắt, thứ tự ưu tiên vấn đề, tốc độ sinh báo cáo để tăng tỷ lệ đọc hết.
 
-Qua 5/5 tiêu chí → **GATE 1 đạt**.
-
-*Lưu ý tự nhắc:* core action ở đây là "đọc hết", không phải "mở app xem báo cáo" — nếu tracking chỉ bắn event khi mở trang thì sẽ rơi vào bẫy lỗi kinh điển ở Phase 4/6.
-
 ## 02 — Action Nature Card + kết luận cadence
 
 | Thành phần | Nội dung |
@@ -47,8 +43,6 @@ Qua 5/5 tiêu chí → **GATE 1 đạt**.
 **Kết luận cadence:**
 
 Đối với trưởng nhóm CSKH, core action "xem hết báo cáo Top 3 vấn đề nóng" thường xuất hiện **mỗi ngày làm việc (đầu ca sáng)** vì dữ liệu hội thoại được tổng hợp theo chu kỳ một ngày kinh doanh và trưởng nhóm cần thông tin trước khi giao việc đầu ngày. Do đó, nhịp đo phù hợp là **daily**, ở cấp **từng trưởng nhóm (cá nhân)**.
-
-GATE 2 đạt: cadence suy ra từ nhịp vận hành thật (chu kỳ ngày kinh doanh), không chọn daily vì "dashboard hay dùng daily".
 
 ## 03 — Metric System (activation / engagement / NSM / leading / counter)
 
@@ -116,8 +110,6 @@ Báo cáo mới sẵn sàng đầu ca (natural trigger) → Xem hết Top 3 (cor
 1. Với mỗi cặp (trưởng_nhóm_id, report_id), hệ thống chỉ ghi `report_viewed` một lần khi đã xem đủ cả 3 mục. Tải lại trang hoặc cuộn qua lại card đã xem không tạo thêm event.
 2. Với mỗi cặp (report_issue_id, nhân_viên_được_giao), `task_assigned_from_report` chỉ ghi khi việc giao đã lưu thành công — không ghi khi mới mở form; giao lại cho cùng người trên cùng vấn đề không tạo event trùng.
 
-GATE 4 đạt: loop ≥2 chu kỳ và có metric hypothesis trỏ về metric ở Phase 3; mọi event đều map được về ít nhất một metric.
-
 ## Tự soi lỗi (Phase 5 — GATE 5)
 
 Đối chiếu 7 câu tự kiểm:
@@ -129,8 +121,3 @@ GATE 4 đạt: loop ≥2 chu kỳ và có metric hypothesis trỏ về metric �
 6. Mọi event map về một metric? ✅
 7. Metric nào cũng có event để tính? ✅
 
-Không phát hiện lỗi kinh điển cần sửa.
-
-## 07 — Revision (nếu có thay đổi lớn: lý do đổi core action / cadence)
-
-Không có thay đổi lớn — core action, cadence, metric, loop giữ nguyên như bản đầu qua tất cả các gate.

@@ -5,4 +5,4 @@
 - Dự án chọn làm: AI tổng hợp phàn nàn khách hàng (Support Radar)
 - Link Metrics Pack: [metrics-pack.md](./metrics-pack.md)
 
-Điều tôi mang về áp dụng cho dự án thật:
+
